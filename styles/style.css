@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Farro-Light";
+  src: url(../fonts/Farro-Light.woff2) format("woff2");
+  src: url(../fonts/Farro-Light.woff) format("woff");
+  src: url(../fonts/Farro-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FrancoisOne-Regular";
+  src: url(../fonts/FrancoisOne-Regular.woff2) format("woff2");
+  src: url(../fonts/FrancoisOne-Regular.woff) format("woff");
+  src: url(../fonts/FrancoisOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PTSans-Bold";
+  src: url(../fonts/PTSans-Bold.woff2) format("woff2");
+  src: url(../fonts/PTSans-Bold.woff) format("woff");
+  src: url(../fonts/PTSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PTSans-Italic";
+  src: url(../fonts/PTSans-Italic.woff2) format("woff2");
+  src: url(../fonts/PTSans-Italic.woff) format("woff");
+  src: url(../fonts/PTSans-Italic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PTSans-Regular";
+  src: url(../fonts/PTSans-Regular.woff2) format("woff2");
+  src: url(../fonts/PTSans-Regular.woff) format("woff");
+  src: url(../fonts/PTSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Staatliches-Regular";
+  src: url(../fonts/Staatliches-Regular.woff2) format("woff2");
+  src: url(../fonts/Staatliches-Regular.woff) format("woff");
+  src: url(../fonts/Staatliches-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Tourney-SemiBold";
+  src: url(../fonts/Tourney-SemiBold.woff2) format("woff2");
+  src: url(../fonts/Tourney-SemiBold.woff) format("woff");
+  src: url(../fonts/Tourney-SemiBold.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+.header {
+  min-height: 80px;
+  margin-bottom: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  background-color: #ffffff;
+  z-index: 100;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+select {
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-right: 55px;
+  font-family: "Tourney-SemiBold";
+  font-size: 22px;
+  line-height: 1.27;
+}
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header__menu {
+  font-family: "Staatliches-Regular";
+  font-size: 22px;
+  line-height: 1.25;
+}
+[class*="__title"] {
+  font-family: "FrancoisOne-Regular";
+  font-size: 36px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 40px;
+}
+
+[class*="__title"] > sup {
+  font-family: "Farro-Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-left: 15px;
+  letter-spacing: 0.04em;
+}
+sup {
+  top: -0.7em;
+}
+section {
+  margin-bottom: 70px;
+}
+h2::before {
+  content: " ";
+  width: 100px;
+  height: 8px;
+  background-color: #000000;
+  display: block;
+  margin-bottom: 20px;
+}
+[class*="__text"] {
+  font-family: "PTSans-Regular";
+  font-size: 28px;
+  line-height: 1.71;
+}
+.underline {
+  text-decoration: underline;
+}
+summary {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.71;
+  list-style: none;
+}
+summary::before {
+  content: "+";
+  margin-right: 10px;
+
+  height: 0.8rem;
+}
+.italic {
+  font-family: "PTSans-Italic";
+}
+mark {
+  background-color: #dadada;
+  padding: 15px 5px;
+}
+p {
+  margin-bottom: 40px;
+}
+.wrapper-flex {
+  display: flex;
+  gap: 2.5%;
+  margin-top: 150px;
+}
+.sidebar {
+  width: 32.08%;
+  align-self: flex-start;
+  position: sticky;
+  top: 150px;
+}
+.main {
+  width: 65.42%;
+  position: relative;
+}
+.menu {
+  padding: 10px;
+}
+.menu__item {
+  border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 70px;
+  padding-bottom: 10px;
+}
+.bg {
+  position: fixed;
+  z-index: -100;
+  top: 150px;
+  right: -10.4%;
+}
+/*-----------------------------------*/
+ain {
+  margin-top: 150px;
+}
+section {
+  margin-bottom: 70px;
+}
+.who__heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+  margin-bottom: 40px;
+}
+.who__heading::before {
+  content: "";
+  display: inline-block;
+  background-color: #000000;
+  width: 100px;
+  height: 8px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.who__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  padding: 20px 15px;
+}
+/*------------------------------------------------*/
+.flip {
+  perspective: 800px;
+  width: 270px;
+  height: 180px;
+}
+.card {
+  position: relative;
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card:hover {
+  transform: rotateY(180deg); /* При наведении вращаем */
+}
+.card-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  width: 100%;
+  object-fit: cover;
+}
+.card-face.back {
+  transform: rotateY(180deg);
+  background-color: #000000;
+}
